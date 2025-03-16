@@ -44,7 +44,7 @@ body{
   background-color: #121212 !important; /*Ensures no overwrites*/
   color: #fff !important;
   font-family: 'Centra', sans-serif !important;
-  background-image: url('./assets/images/banner-bg.png');
+  background-image: url('./assets/images/banner-bg.jpg');
   background-size: cover;
   background-attachment: fixed;
   min-height: 100vh;
@@ -293,6 +293,73 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin-bottom: 20px;
   display: block;
 }
+
+/* Gradient name styles with animation */
+.gradient-name {
+  background: linear-gradient(90deg, #AA367C 0%, #5E2F95 100%);
+  background-size: 200% 200%;
+  animation: gradient-animation 5s ease infinite, shadow-animation 5s ease infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  display: inline-block;
+  font-weight: 800;
+}
+
+/* Create the gradient animation */
+@keyframes gradient-animation {
+  0% {
+    background: linear-gradient(90deg, #AA367C 0%, #5E2F95 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
+  25% {
+    background: linear-gradient(90deg, #5E2F95 0%, #4A47E7 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
+  50% {
+    background: linear-gradient(90deg, #4A47E7 0%, #09C6F9 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
+  75% {
+    background: linear-gradient(90deg, #09C6F9 0%, #AA367C 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
+  100% {
+    background: linear-gradient(90deg, #AA367C 0%, #5E2F95 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
+}
+
+/* Create the shadow animation to match the gradient colors */
+@keyframes shadow-animation {
+  0% {
+    text-shadow: 2px 2px 8px rgba(170, 54, 124, 0.5);
+    filter: drop-shadow(3px 3px 5px rgba(170, 54, 124, 0.5));
+  }
+  25% {
+    text-shadow: 2px 2px 8px rgba(94, 47, 149, 0.5);
+    filter: drop-shadow(3px 3px 5px rgba(94, 47, 149, 0.5));
+  }
+  50% {
+    text-shadow: 2px 2px 8px rgba(74, 71, 231, 0.5);
+    filter: drop-shadow(3px 3px 5px rgba(74, 71, 231, 0.5));
+  }
+  75% {
+    text-shadow: 2px 2px 8px rgba(9, 198, 249, 0.5);
+    filter: drop-shadow(3px 3px 5px rgba(9, 198, 249, 0.5));
+  }
+  100% {
+    text-shadow: 2px 2px 8px rgba(170, 54, 124, 0.5);
+    filter: drop-shadow(3px 3px 5px rgba(170, 54, 124, 0.5));
+  }
+}
+
 .banner p {
   color: #B8B8B8;
   font-size: 18px;

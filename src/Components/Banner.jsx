@@ -49,7 +49,7 @@ export const Banner = () => {
           <Col xs={12} md={6} xl={7}>
             <span className="tagline">Welcome to my Portfolio</span>
             <h1>
-              {`Hi, I'm Nandu Mahesh`}
+              <span className="gradient-name">Hi, I'm Nandu Mahesh</span>
               <br />
               <span className="wrap">{text}</span>
             </h1>
