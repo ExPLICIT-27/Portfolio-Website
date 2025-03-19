@@ -296,7 +296,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /* Gradient name styles with animation */
 .gradient-name {
-  background: linear-gradient(90deg, #AA367C 0%, #5E2F95 100%);
+  background: linear-gradient(90deg, #09C6F9 0%, #AA367C 100%);
   background-size: 200% 200%;
   animation: gradient-animation 5s ease infinite, shadow-animation 5s ease infinite;
   -webkit-background-clip: text;
@@ -310,30 +310,16 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 /* Create the gradient animation */
 @keyframes gradient-animation {
   0% {
-    background: linear-gradient(90deg, #AA367C 0%, #5E2F95 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-  }
-  25% {
-    background: linear-gradient(90deg, #5E2F95 0%, #4A47E7 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-  }
-  50% {
     background: linear-gradient(90deg, #4A47E7 0%, #09C6F9 100%);
     -webkit-background-clip: text;
     background-clip: text;
   }
-  75% {
+  50% {
     background: linear-gradient(90deg, #09C6F9 0%, #AA367C 100%);
     -webkit-background-clip: text;
     background-clip: text;
   }
-  100% {
-    background: linear-gradient(90deg, #AA367C 0%, #5E2F95 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-  }
+  
 }
 
 /* Create the shadow animation to match the gradient colors */
@@ -485,4 +471,54 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active::after {
   background: linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
   margin: 5px auto 0;
   position: relative;
+}
+/*Projects css*/
+.project{
+  background-color: black;
+  width: 100%;
+  height: 400px;
+  padding: 20px;
+}
+.project Container{
+  align-self: center;
+}
+.project .align-items-center{
+  text-align: center;
+  display: block;
+  align-items: center;
+  justify-content: center;
+}
+.project .align-items-center .pills{
+  position: relative;
+  top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2em;
+  margin: 15px;
+}
+.project .align-items-center [class^='nav-item']{
+  width: 33.3%;
+  text-align: center;
+}
+.project .align-items-center .nav-item1{
+  border-left: 2px solid white;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+  border-top-left-radius: 14px;
+  border-bottom-left-radius: 14px;
+}
+.project .align-items-center .nav-item3{
+  border-right: 2px solid white;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+  border-top-right-radius: 14px;
+  border-bottom-right-radius: 14px;
+}
+.project .align-items-center .nav-item2{
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+}
+.project .align-items-center .nav-item1, .project .align-items-center .nav-item2{ 
+  border-right: 2px solid white;
 }
